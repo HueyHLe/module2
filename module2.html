@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Monaco";
+      }
+      .column {
+        float: left;
+        width: 100%;
+        border: 3px solid black;
+        margin: 10px;
+        background-color: lightslategray;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .title {
+        width: 150px;
+        height: 25px;
+        text-align: center;
+        border: 3px solid black;
+        margin-right: -2px;
+        margin-top: -2px;
+        margin-left: auto;
+      }
+      .description {
+        padding: 5px;
+        text-align: left;
+        height: 200px;
+        width: 100%;
+      }
+      /********** Large devices only **********/
+      @media (min-width: 992px) {
+        .column {
+          width: 30%;
+        }
+      }
+      /********** Medium devices only **********/
+      @media (min-width: 768px) and (max-width: 991px) {
+        .column {
+          width: 45%;
+        }
+
+        #c3 {
+          width: 92%;
+        }
+      }
+      @media (max-width: 767px) {
+        .column {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Our Menu</h1>
+    <div class="row">
+      <div class="column">
+        <section class="title" style="background-color: aqua">Chicken</section>
+        <section class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          nisi sit doloribus ut facilis perferendis aspernatur autem dolorem
+          ipsa blanditiis. Omnis blanditiis velit placeat fugiat facere. Maxime
+          quae repellendus nihil.
+        </section>
+      </div>
+      <div class="column">
+        <section class="title" style="background-color: lightcoral">
+          Beef
+        </section>
+        <section class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error
+          praesentium reiciendis harum dignissimos architecto, enim,
+          exercitationem perferendis soluta dolore nisi autem laborum cum nam!
+          Animi expedita facere ut eaque.
+        </section>
+      </div>
+      <div class="column" id="c3">
+        <section class="title" style="background-color: bisque">Sushi</section>
+        <section class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+          deserunt aut quo sequi ipsam inventore ipsum maxime similique aliquid
+          libero dolorem, magni culpa quas autem, nisi tempora. Error, voluptate
+          facilis!
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
